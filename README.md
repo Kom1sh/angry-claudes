@@ -8,7 +8,7 @@ Angry Birds, except Claude is on the slingshot and the other AI coding CLIs are 
 
 This repository hosts the free demo, chapter one with five levels: **[kom1sh.github.io/angry-claudes](https://kom1sh.github.io/angry-claudes/)**.
 
-The full game at [angryclaudes.com](https://angryclaudes.com) has 15 levels in three chapters (Localhost, Staging, Production), Claude Fable and his plot-twist boomerang, day, dusk and night stages, and the codex-max boss fight.
+The full game at [angryclaudes.com](https://angryclaudes.com) has 25 levels in five chapters: Localhost, Staging, Production with the codex-max boss, The Cloud (cloud servers in space with their own gravity) and Code Freeze (ice, ropes, CI/CD lifts and node_modules crates). Achievements unlock one-shot slingshot power-ups: Debug mode, sudo, Max plan, Chaos Monkey, Rubber Duck Storm and Hotfix. Five golden rubber ducks are hidden in the levels.
 
 ## The Claudes
 
@@ -19,7 +19,7 @@ The full game at [angryclaudes.com](https://angryclaudes.com) has 15 levels in t
 | Sonnet | Straight-line dash. Splinters wood |
 | Opus | Heavy. Breaks stone |
 | /compact | Compresses the context around him, loudly |
-| Fable | Plot twist: turns around and hits the fort from behind (full game) |
+| Fable | Drops a volley of explosive Easter eggs (full game) |
 
 ## Controls
 

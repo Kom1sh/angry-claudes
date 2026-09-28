@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
     <title>Angry Claudes: Claude vs. the other AI coding CLIs, a free browser game</title>
-    <meta name="description" content="Slingshot Claude at Codex, Gemini, Copilot, Cursor, Grok and DeepSeek. 15 physics levels, six Claude models with special powers, pixel art. Free, right in your browser." />
+    <meta name="description" content="Slingshot Claude at Codex, Gemini, Copilot, Cursor, Grok and DeepSeek. 25 physics levels from localhost to the cloud, six Claude models with special powers, achievements. Free, right in your browser." />
     <link rel="canonical" href="https://angryclaudes.com/" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#F4C69B" />
@@ -43,7 +43,7 @@
         "name": "Angry Claudes",
         "url": "https://angryclaudes.com/",
         "image": "https://angryclaudes.com/og.png",
-        "description": "A free physics browser game: slingshot Claude at the other AI coding CLIs — Codex, Gemini, Kimi, Qwen, Copilot, DeepSeek, Cursor, Grok, Mistral and the codex-max boss. 15 levels, six Claude models with special powers.",
+        "description": "A free physics browser game: slingshot Claude at the other AI coding CLIs — Codex, Gemini, Kimi, Qwen, Copilot, DeepSeek, Cursor, Grok, Mistral and the codex-max boss. 25 levels in five chapters, including cloud servers in space and a Code Freeze, six Claude models with special powers and one-shot power-ups earned with achievements.",
         "genre": ["Puzzle", "Physics", "Casual", "Parody"],
         "gamePlatform": ["Web browser", "Desktop", "Mobile"],
         "applicationCategory": "Game",
@@ -55,8 +55,8 @@
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
       }
     </script>
-    <script type="module" crossorigin src="/angry-claudes/assets/index-DGJpJvVu.js"></script>
-    <link rel="stylesheet" crossorigin href="/angry-claudes/assets/index-BiFo8eGb.css">
+    <script type="module" crossorigin src="/angry-claudes/assets/index-k7zZIhAn.js"></script>
+    <link rel="stylesheet" crossorigin href="/angry-claudes/assets/index-DLOnaHUs.css">
   </head>
   <body>
     <noscript>
@@ -74,6 +74,7 @@
         <button id="btn-restart" class="icon-btn" data-i18n-title="restartHint">
           <svg viewBox="0 0 8 8" shape-rendering="crispEdges"><path d="M2 1h4v1h1v1H6v1H5V3H3v1H2v2h3V5h1v1h1v1H1V2h1z" /></svg>
         </button>
+        <div id="powers" class="powers"></div>
       </div>
       <div class="hud-right">
         <div id="score">0</div>
@@ -89,6 +90,7 @@
         <p class="sub" data-i18n="subtitle">Claude vs. the other coding CLIs</p>
         <div class="stack">
           <button id="btn-play" class="btn primary" data-i18n="play">Play</button>
+          <button id="btn-ach" class="btn small ach-btn"><span data-i18n="achievements">Achievements</span></button>
           <div class="row">
             <button id="btn-sound" class="btn small"></button>
             <button id="btn-lang" class="btn small" lang="ru"></button>
@@ -129,6 +131,21 @@
         <button id="newbird-ok" class="btn primary" data-i18n="go">Let’s go</button>
       </div>
     </section>
+
+    <section id="ach" class="screen overlay" hidden>
+      <div class="card ach-card">
+        <div class="ach-head">
+          <h2 data-i18n="achievements">Achievements</h2>
+          <div id="ach-count"></div>
+          <button id="ach-close" class="btn small" data-i18n="close">Close</button>
+        </div>
+        <h3 data-i18n="powerups">Power-ups</h3>
+        <div id="ach-powers"></div>
+        <div id="ach-list"></div>
+      </div>
+    </section>
+
+    <div id="toasts"></div>
 
     <div id="rotate">
       <svg viewBox="0 0 16 16" shape-rendering="crispEdges"><path d="M4 1h6v1h1v5h-1V2H4v12h6v-2h1v3H3V1h1zM12 8h2v1h1v3h-1v1h-1v-1h1V9h-2v1h-1V8zM6 12h2v1H6z" /></svg>
